@@ -18,9 +18,13 @@
         <div class="hero-text">
             <h1>My favorite Ice Cream!</h1>
                 <p>Yours better be the same as mine!... or else.</p>
-                
-                <p id="userID">So tell me <span id="username"></span>, which is your favorite?</p>
-                <script src="script.js"></script>
+                <p id="myParagraph"></p>
+
+                <script type="text/javascript">
+                    const name = prompt("Hi! I have been so lonely I could use a friend, what is your name?");
+                    const myParagraph = document.getElementById("myParagraph");
+                    myParagraph.textContent = `So, ${name}, what is your favorite flavor?`;
+                </script>
         </div>
     </header>
     <main>
@@ -30,8 +34,13 @@
             <button id="chocolateButton"></button>
             <script src="scripts.js"></script>
         </div>
-        <div>
-
+        <div class="userColor">
+            <p>What color would you like the background?</p>
+            <p>I only know 3 colors, blue pink and... "your blood" red.</p>
+            <form>
+                <input type="text" name="bgColor">
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </main>
 

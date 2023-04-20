@@ -21,6 +21,7 @@ body {
     background-color: hsla(211, 100%, 70%, 0.75);
 }
 
+
 .button-container {
     margin-top: 100px;
     display: flex;
@@ -53,6 +54,12 @@ body {
   button:hover {
     cursor: pointer;
   }
+
+.userColor {
+    color: blue;
+    text-align: center;
+    margin-top: 100px;
+}
 
 .footer {
     position: absolute;

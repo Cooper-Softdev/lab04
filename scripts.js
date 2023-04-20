@@ -14,5 +14,9 @@ chocolatebutton.addEventListener('click', function() {
   alert('If you answer wrong again... its all over for you.');
 });
 
-const usersName = prompt("Hi! I have been so lonely I could use a friend, what is your name?");
+// const usersName = prompt("Hi! I have been so lonely I could use a friend, what is your name?");
+
+var backgroundColor = document.getElementsByName("bgColor");
+
+console.log(backgroundColor);
 
