@@ -11,12 +11,6 @@ vanillabutton.addEventListener('click', function() {
 
 const chocolatebutton = document.getElementById("chocolateButton");
 chocolatebutton.addEventListener('click', function() {
-  alert('If you answer wrong again... its all over for you.');
+  alert('If you answer wrong again... its all over.');
 });
-
-// const usersName = prompt("Hi! I have been so lonely I could use a friend, what is your name?");
-
-var backgroundColor = document.getElementsByName("bgColor");
-
-console.log(backgroundColor);
 

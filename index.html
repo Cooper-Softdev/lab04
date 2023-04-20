@@ -25,6 +25,23 @@
                     const myParagraph = document.getElementById("myParagraph");
                     myParagraph.textContent = `So, ${name}, what is your favorite flavor?`;
                 </script>
+                <p id="usersTime">
+                    
+                </p>
+                <script>
+                    var usersHour = new Date().getHours();
+                    let message;
+                    if (usersHour < 12) {
+                      message = "I know it's early, so take your time... and remember... no rush.";
+                    } else if (usersHour < 18) {
+                      message = "It's almost late, I bet you're hungry, huh?";
+                    } else {
+                      message = "Last person who woke me up this late is gone, but where to?";
+                    }
+                    const usersTimeElement = document.getElementById("usersTime");
+                    usersTimeElement.innerHTML = message;
+                </script>
+                
         </div>
     </header>
     <main>
