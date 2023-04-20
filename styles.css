@@ -21,19 +21,38 @@ body {
     background-color: hsla(211, 100%, 70%, 0.75);
 }
 
-.image-container {
+.button-container {
+    margin-top: 100px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   
-  .image-container img {
+  .image-container button {
     display: inline-block;
-    height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
   }
   
+  #vanillaButton {
+    width: 250px;
+    height: 250px;
+    background-image: url('./images/vanilla.jpg');
+    background-size: cover;
+  }
+  #strawberryButton {
+    width: 250px;
+    height: 250px;
+    background-image: url('./images/strawberry.jpg');
+    background-size: cover;
+  }
+  #chocolateButton {
+    width: 250px;
+    height: 250px;
+    background-image: url('./images/chocolate.jpg');
+    background-size: cover;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
 
 .footer {
     position: absolute;
