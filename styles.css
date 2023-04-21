@@ -1,73 +1,72 @@
 .hero {
-    background-image: url('./images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    height: 420px;
-  }
-  .hero-text {
-    color: blue;
-    text-align: center;
-    padding-top: 100px;
-    
-  }
-  h1 {
-    font-size: 48px;
-    margin-bottom: 16px;
-  }
-  p {
-    font-size: 24px;
-  }
+  background-image: url("./images/background.jpg");
+  background-size: contain;
+  background-position: center;
+  justify-content: center;
+  height: 420px;
+}
+.hero-text {
+  color: blue;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+p {
+  font-size: 24px;
+}
 
 body {
-    background-color: hsla(211, 100%, 70%, 0.75);
+  background-color: hsla(211, 100%, 70%, 0.75);
 }
 main {
   padding-bottom: 0px;
 }
 
 .button-container {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .image-container button {
-    display: inline-block;
-  }
-
-  .exitquestion {
-    color: blue;
-    text-align: center;
-    margin-top: 20px;
-    padding-bottom: 0px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
-  
-  #vanillaButton {
-    width: 250px;
-    height: 250px;
-    background-image: url('./images/vanilla.jpg');
-    background-size: cover;
-  }
-  #strawberryButton {
-    width: 250px;
-    height: 250px;
-    background-image: url('./images/strawberry.jpg');
-    background-size: cover;
-  }
-  #chocolateButton {
-    width: 250px;
-    height: 250px;
-    background-image: url('./images/chocolate.jpg');
-    background-size: cover;
-  }
 
-  button:hover {
-    cursor: pointer;
-  }
+.image-container button {
+  display: inline-block;
+}
+
+.exitquestion {
+  color: blue;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+
+#vanillaButton {
+  width: 250px;
+  height: 250px;
+  background-image: url("./images/vanilla.jpg");
+  background-size: cover;
+}
+#strawberryButton {
+  width: 250px;
+  height: 250px;
+  background-image: url("./images/strawberry.jpg");
+  background-size: cover;
+}
+#chocolateButton {
+  width: 250px;
+  height: 250px;
+  background-image: url("./images/chocolate.jpg");
+  background-size: cover;
+}
+
+button:hover {
+  cursor: pointer;
+}
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
