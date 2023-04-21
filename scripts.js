@@ -1,16 +1,16 @@
 
 const strawberrybutton = document.getElementById("strawberryButton");
-strawberrybutton.addEventListener('click', function() {
+strawberrybutton.addEventListener('click', function () {
   alert('oh WOW! Mine too! Now we are friends! Forever');
 });
 
 const vanillabutton = document.getElementById("vanillaButton");
-vanillabutton.addEventListener('click', function() {
+vanillabutton.addEventListener('click', function () {
   alert('WRONG WRONG WRONG! Are you trying to make me angry?');
 });
 
 const chocolatebutton = document.getElementById("chocolateButton");
-chocolatebutton.addEventListener('click', function() {
+chocolatebutton.addEventListener('click', function () {
   alert('If you answer wrong again... its all over.');
 });
 
@@ -29,23 +29,24 @@ usersTimeElement.innerHTML = message;
 function magicWord() {
   const userPlea = document.getElementsById("pleaInput").value;
   console.log("User plea: " + userPlea);
-  
 }
 
-function magicWordno(){
+function magicWordno() {
   magicWordgif.innerHTML = ("<img src='images/magicword.gif' alt='NEUMAN' />");
 }
 
-function magicWordyes(){
+function magicWordyes() {
   magicWordYes.innerHTML = ("<a href='https://en.wikipedia.org/wiki/Existential_crisis'>Get me the hell outta here!</a>");
 }
 
-function rateMyPage(){
+function rateMyPage() {
   let rating = prompt("On a scale from 1-9999 how bad do you want to go home?");
-
-  console.log(rating)
-  for (let i = 0; i < rating; i++){
+  while (rating < 1 || rating > 10000 || isNaN(rating)) {
+    rating = prompt("Please enter a number from 1 to 9999.");
+  }
+  for (let i = 0; i < rating; i++) {
     document.write("<img src='images/magicword.gif' alt='NEUMAN' />");
+    console.log(rating)
   }
 }
 
