@@ -17,7 +17,7 @@ chocolatebutton.addEventListener('click', function () {
 var usersHour = new Date().getHours();
 let message;
 if (usersHour < 12) {
-  message = "I know it's early, so take your time... and remember... no rush.";
+  message = "I know it's early, so take your time...you've got nothing but.";
 } else if (usersHour < 18) {
   message = "It's almost late, I bet you're hungry, huh? Pick...now.";
 } else {
@@ -25,11 +25,6 @@ if (usersHour < 12) {
 }
 const usersTimeElement = document.getElementById("usersTime");
 usersTimeElement.innerHTML = message;
-
-function magicWord() {
-  const userPlea = document.getElementsById("pleaInput").value;
-  console.log("User plea: " + userPlea);
-}
 
 function magicWordno() {
   magicWordgif.innerHTML = ("<img src='images/magicword.gif' alt='NEUMAN' />");
@@ -40,12 +35,12 @@ function magicWordyes() {
 }
 
 function rateMyPage() {
-  let rating = prompt("On a scale from 1-9999 how bad do you want to go home?");
-  while (rating < 1 || rating > 10000 || isNaN(rating)) {
-    rating = prompt("Please enter a number from 1 to 9999.");
+  let rating = prompt("On a scale from 1-999 how badly do you want to go home?");
+  while (rating < 1 || rating > 1000 || isNaN(rating)) {
+    rating = prompt("Please enter a number from 1 to 999.");
   }
   for (let i = 0; i < rating; i++) {
-    document.write("<img src='images/magicword.gif' alt='NEUMAN' />");
+    document.write("<img src='images/shangtsung.gif' alt='Shang Tsung stealing your soul' />");
     console.log(rating)
   }
 }
