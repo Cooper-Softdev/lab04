@@ -21,7 +21,7 @@ if (usersHour < 12) {
 } else if (usersHour < 18) {
   message = "It's almost late, I bet you're hungry, huh? Pick...now.";
 } else {
-  message = "Last person who woke me up this late and choce wrong is gone.";
+  message = "Last person who woke me up this late and choose wrong, is gone.";
 }
 const usersTimeElement = document.getElementById("usersTime");
 usersTimeElement.innerHTML = message;
