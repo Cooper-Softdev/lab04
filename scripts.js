@@ -30,8 +30,12 @@ function magicWordno() {
   magicWordgif.innerHTML = ("<img src='images/magicword.gif' alt='NEUMAN' />");
 }
 
+
 function magicWordyes() {
-  magicWordYes.innerHTML = ("<a href='https://en.wikipedia.org/wiki/Existential_crisis'>Get me the hell outta here!</a>");
+  magicWordgif.innerHTML = ('<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2SmXJEhm1yJvXK6Hx4XAYT?utm_source=generator" width="25%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>')
+  magicWordYes.innerHTML = ("<a href='https://en.wikipedia.org/wiki/Existential_crisis' target='_blank'>Get me the hell outta here!</a>");
+  // goingDeeper.innerHTML = ("<a href='spotify:track:2SmXJEhm1yJvXK6Hx4XAYT?si=74f27bf7638146bc#spotify:play' target='_blank'>Red Pill please, I would like to know more.</a>");
+
 }
 
 function rateMyPage() {
